@@ -87,6 +87,12 @@ bPunto = true;
 despliega.setText(texto); 
 texto = "";
 }
+log base 10
+//logaritmo base 10
+if (i == 27 && texto != ""){
+texto= ""+Math.log10(Double.parseDouble(texto)); //
+despliega.setText(texto);
+}
 if (i == 8 && texto !=""){
 res = -Double.parseDouble(texto);
 texto = ""+ res;
