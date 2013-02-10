@@ -63,6 +63,13 @@ op1 = 0;
 op2 = 0;
 despliega.setText(0); 
 }
+
+if (i == 9 && texto !=""){
+res = Math.sqrt(Double.parseDouble(texto));
+texto = ""+ res;
+despliega.setText(texto);
+}
+//
 if (i >= 10 && i<=12 || (i>= 15 && i<=17) || //
 (i>=20 && i<= 22) || i==25 || i==26){
 if(i == 26 && bPunto){
