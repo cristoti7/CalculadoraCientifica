@@ -22,7 +22,47 @@ public void actionPerformed(ActionEvent evento ){
 for (int i=0; i < boton.length;i++){
 //Que hay q hacer cuando preisonmos el boton[i]
 if (evento.getSource() == boton[i]){
-
+if (i == 0){ borrar memoria
+memoria=0;
+}
+if (i == 1){ memori restore
+texto = +memoria;
+despliega.setText(texto);
+}
+if (i == 2 && texto!=){ guardo el primer numero
+memoria= Double.parseDouble(texto);
+}
+if (i == 3 && texto!=){ memori mas
+memoria+= Double.parseDouble(texto);
+}
+if (i == 4 && texto!=){ memori menos
+memoria-= Double.parseDouble(texto);
+}
+borrar un numero
+if (i == 5 && texto!=){
+if(texto.charAt(texto.length()-1)=='.')bPunto=true; charAt devuelve el caracter length menos 1
+if(texto.length()==1){
+despliega.setText(0);
+texto=;
+}
+else if(texto.length()1){
+texto = texto.substring(0,texto.length()-1);
+despliega.setText(texto);
+}
+}
+if (i == 6){
+CE
+texto= ; borra el ultimo texto
+bPunto= true;
+despliega.setText(0);
+}
+if (i== 7){
+texto= ; i = 7 == c borra todo
+bPunto= true;
+op1 = 0;
+op2 = 0;
+despliega.setText(0); 
+}
 if (i >= 10 && i<=12 || (i>= 15 && i<=17) || //
 (i>=20 && i<= 22) || i==25 || i==26){
 if(i == 26 && bPunto){
